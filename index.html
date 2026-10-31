@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio Hafizh Faiz Fadhlurrahman S. T. - Pengembang Kreatif, UI/UX Designer, dan Web Programmer.">
+    <title>Portfolio Hafizh Faiz F</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <nav class="glass" id="navbar">
+        <a href="#home" class="logo">Home</a>
+        <i class="fa-solid fa-bars menu-toggle" id="mobile-menu"></i>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#keahlian">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Project</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#contact" class="btn nav-contact-btn">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h3 class="hero-name-label">HAFIZH FAIZ</h3>
+                <h2 class="hero-name-full">FADHLURRAHMAN S. T.</h2>
+                <p class="hero-subtitle">A Bachelors graduate in Informatics Engineering from Universitas Pasundan with
+                    skills and experience as a UI/UX Designer and Software Engineer.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn">Explore More</a>
+                    <a class="btn btn-outline" href="javascript:void(0);" onclick="openImageModal('assets/CV_ATS_HAFIZH FAIZ FADHLURRAHMAN.webp')">
+                        <i class="fa-solid fa-download" ></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/profile.webp" alt="Hafizh Faiz Profile Picture">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="personal-info-card glass">
+                <h3 class="personal-info-title">
+                    <i class="fa-solid fa-id-card"></i>Personal Information
+                </h3>
+                <div class="personal-info-grid">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Nickname</span>
+                            <span class="info-value">Hafiz</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Birthday</span>
+                            <span class="info-value">24 Juli 2003</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Age</span>
+                            <span class="info-value" id="umur">23</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">City</span>
+                            <span class="info-value">Kuningan</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Degree</span>
+                            <span class="info-value">Bachelor of Science in Computer Science</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Email</span>
+                            <span class="info-value"><a
+                                    href="mailto:hafizhfaiz11@gmail.com">hafizhfaiz11@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="info-content">
+                            <span class="info-label">Status</span>
+                            <span class="info-value">
+                                <span class="badge-status">
+                                    <span class="status-dot"></span>Open To Work
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="keahlian">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="skills-container">
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-code"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="3"><i class="fa-brands fa-html5"></i> HTML5<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="3"><i class="fa-brands fa-css3-alt"></i> CSS3<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-brands fa-js"></i> JavaScript<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-brands fa-php"></i> PHP(OOP)<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-brands fa-github"></i> Git<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-database"></i> MySQL<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="3"><i class="fa-solid fa-wind"></i> Tailwind CSS<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-brands fa-laravel"></i> Laravel<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="1"><i class="fa-solid fa-layer-group"></i> Filament<span class="skill-level" aria-label="Low"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-pen-nib"></i> UI/UX Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="3"><i class="fa-brands fa-figma"></i> Figma<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="3"><i class="fa-solid fa-layer-group"></i> Prototyping<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-pen-ruler"></i> Wireframing<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-cubes"></i> Design Systems<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-users-viewfinder"></i> User Research<span class="skill-level" aria-label="Low"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3><i class="fa-solid fa-camera"></i> Creative</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="3"><i class="fa-solid fa-video"></i> Adobe Premiere<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="3"><i class="fa-solid fa-clapperboard"></i> Capcut<span class="skill-level" aria-label="Expert"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-image"></i> Adobe Photoshop<span class="skill-level" aria-label="Intermediate"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                        <span class="skill-tag" data-level="2"><i class="fa-solid fa-pen-nib"></i> Adobe Illustrator<span class="skill-level" aria-label="Low"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-date">20 Sep 2023 – Sep 2024</div>
+                        <h3 class="timeline-title">UI/UX Curriculum Developer</h3>
+                        <div class="timeline-org">
+                            <i class="fa-brands fa-google"></i>
+                            <a href="https://www.instagram.com/gdgoc.unpas/" target="_blank" rel="noopener noreferrer">Google Developer Student Clubs (GDSC)</a>
+                        </div>
+                        <p>
+                            Memimpin workshop teknis, menjadi pembicara di berbagai acara kampus,
+                            serta membimbing mahasiswa dalam memahami dasar-dasar desain UI/UX.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-date">15 Jul 2024 – 15 Nov 2024</div>
+                        <h3 class="timeline-title">UI/UX Intern</h3>
+                        <div class="timeline-org">
+                            <a href="https://kawankerja.id/" target="_blank" rel="noopener noreferrer">Kawan Kerja</a>
+                        </div>
+                        <p>
+                            Berkolaborasi dengan tim untuk merancang dan mengembangkan antarmuka web (UI)
+                            yang responsif serta meningkatkan pengalaman pengguna (UX).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="section-title">Project</h2>
+            <div class="grid-gallery">
+                <div class="project-card glass">
+                    <img src="assets/Cherish Wedding.webp" alt="Analytics Dashboard" class="project-img">
+                    <div class="project-info">
+                        <h3>Cherish Wedding</h3>
+                        <p>Cherish Wedding is A website focused on event services, specifically for wedding vendors.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="fa-solid fa-database"></i> My Sql</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0);"
+                            onclick="openVideoModal('assets/cherish wedding.mp4')"
+                            class="link-demo">
+                                <i class="fa-solid fa-eye"></i> Preview Video
+                            </a>
+                            <a href="https://github.com/putriauliam/CherishWedding" target="_blank" rel="noopener noreferrer" class="link-code">
+                                <i class="fa-brands fa-github"></i> Kode
+                            </a>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/mysql.webp')" class="link-demo">
+                                <i class="fa-solid fa-eye"></i> MySql Database
+                            </a>
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/GithubTeamCollab.webp')" class="link-code">
+                                <i class="fa-solid fa-people-group"></i> Team Collaboration
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <img src="assets/SuryaGemilang.webp" alt="Analytics Dashboard" class="project-img">
+                    <div class="project-info">
+                        <h3>Inventory Management Surya Gemilang</h3>
+                        <p>Inventory Management Surya Gemilang is a web application built with PHP and Laravel, designed to streamline inventory management and monitor sales performance.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span class="skill-tag"><i class="fa-solid fa-database"></i> My Sql</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0);"
+                            onclick="openVideoModal('assets/demosuryagemilang.mp4')"
+                            class="link-demo">
+                                <i class="fa-solid fa-eye"></i> Preview Video
+                            </a>
+                            <a href="https://github.com/hafizfaiz/SuryaGemilang" target="_blank" rel="noopener noreferrer" class="link-code">
+                                <i class="fa-brands fa-github"></i> Kode
+                            </a>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/mysql.webp')" class="link-demo">
+                                <i class="fa-solid fa-eye"></i> MySql Database
+                            </a>
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/DiagramClass.webp')" class="link-code">
+                                <i class="fa-solid fa-eye"></i> Class Diagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <img src="assets/Ramadhan.webp" alt="Wellness App UI" class="project-img">
+                    <div class="project-info">
+                        <h3>UI/UX Design Ramadhan Kawan Kerja</h3>
+                        <p>An Islamic-themed web UI/UX design that merges task management with prayer schedules to help professionals stay productive while fasting during Ramadan.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-figma"></i> Wireframe</span>
+                            <span class="skill-tag"><i class="fa-solid fa-palette"></i> UI Design</span>
+                            <span class="skill-tag"><i class="fa-solid fa-users-viewfinder"></i> UX Research</span>
+                            <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/Ramadhan.webp')" class="link-demo">
+                                <i class="fa-solid fa-eye"></i> Preview
+                            </a>
+                            <a href="javascript:void(0);" onclick="openImageModal('assets/Figma.webp')" class="link-code">
+                                <i class="fa-brands fa-figma"></i> Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sertifikat -->
+        <section id="certificate">
+            <h2 class="section-title">Certificate</h2>
+            <div class="cert-grid">
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Learning HTML &amp; CSS</h3>
+                        <p>Progate • December 2021</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/sertifikatHtml.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Learning PHP</h3>
+                        <p>Progate • April 2022</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/sertifikatphp.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>UX Fundamentals</h3>
+                        <p>GYMNASIUM • May 2024</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/uxfundamentals.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Basic Concept of Computer Science</h3>
+                        <p>Code.org</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/sertifikathoc.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>JobReady Employability Skills</h3>
+                        <p>Wadhwani Foundation • February 2026</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/JobReady Employability Skills.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Legacy Responsive Web Design V8</h3>
+                        <p>freeCodeCamp (<i class="fa-solid fa-fire"></i>) • 20 October 2026</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/responsive-web-design.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+                <div class="cert-card glass">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Legacy JavaScript Algorithms and Data Structures V7</h3>
+                        <p>freeCodeCamp (<i class="fa-solid fa-fire"></i>) • 30 October 2026</p>
+                    </div>
+                    <div class="cert-date">
+                        <a href="javascript:void(0);" onclick="openImageModal('assets/Legacy JavaScript Algorithms and Data Structures V7.webp')">
+                            <i class="fa-solid fa-eye"></i> show
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak & Sosial Media -->
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-desc">Find me on social platforms or email me directly to collaborate on your next exciting project!</p>
+
+            <div class="contact-links">
+                <a href="mailto:hafizhfaiz11@gmail.com" class="social-link featured glass" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hafizh-faiz-fadhlurrahman/" target="_blank" rel="noopener noreferrer"
+                    class="social-link glass" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/hafizfaiz" target="_blank" rel="noopener noreferrer" class="social-link glass" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/hafizfaiz24" target="_blank" rel="noopener noreferrer" class="social-link glass"
+                    aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@havizs" target="_blank" rel="noopener noreferrer" class="social-link glass"
+                    aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@havizss" target="_blank" rel="noopener noreferrer" class="social-link glass"
+                    aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Modal Image -->
+    <div id="imageModal" class="preview-modal" role="dialog" aria-modal="true" aria-label="Image Preview">
+        <div class="preview-content">
+            <button class="close-modal" type="button" aria-label="Tutup preview"
+                    onclick="closeImageModal()">&times;</button>
+            <img id="previewImage" src="" alt="Preview Image">
+        </div>
+    </div>
+
+    <!-- Modal Video -->
+    <div id="videoModal" class="preview-modal" role="dialog" aria-modal="true" aria-label="Video Preview">
+        <div class="preview-content">
+            <button class="close-modal" type="button" aria-label="Tutup preview"
+                    onclick="closeVideoModal()">&times;</button>
+            <video id="previewVideo" controls playsinline>
+                Browser Anda tidak mendukung video.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Calculate age dynamically based on birthdate (24 Juli 2003)
+        const birthDate = new Date(2003, 6, 24);
+        const today = new Date();
+        let calculatedAge = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            calculatedAge--;
+        }
+        const umurElement = document.getElementById("umur");
+        if (umurElement) {
+            umurElement.textContent = calculatedAge;
+        }
+
+        // Smooth reveal animation on scroll (exclude fixed navbar to prevent transform issues)
+        const observeElements = Array.from(document.querySelectorAll('.container .glass, .section-title'));
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = entry.target.classList.contains('section-title')
+                            ? 'translateX(-50%) translateY(0)'
+                            : 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observeElements.forEach(el => {
+                el.style.opacity = '0';
+                if (el.classList.contains('section-title')) {
+                    el.style.transform = 'translateX(-50%) translateY(30px)';
+                } else {
+                    el.style.transform = 'translateY(30px)';
+                }
+                el.style.transition = 'all 0.8s ease-out';
+                observer.observe(el);
+            });
+        }
+
+        // Dynamic nav background for scroll
+        const nav = document.getElementById('navbar');
+        if (nav) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        if (mobileMenu && navLinks) {
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                if (navLinks.classList.contains('active')) {
+                    mobileMenu.classList.remove('fa-bars');
+                    mobileMenu.classList.add('fa-xmark');
+                } else {
+                    mobileMenu.classList.remove('fa-xmark');
+                    mobileMenu.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    mobileMenu.classList.remove('fa-xmark');
+                    mobileMenu.classList.add('fa-bars');
+                });
+            });
+        }
+
+        // Modal Image logic
+        function openImageModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const previewImg = document.getElementById('previewImage');
+            if (modal && previewImg) {
+                previewImg.src = imageSrc;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Backward-compatible alias for openModal
+        function openModal(imageSrc) {
+            openImageModal(imageSrc);
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            const previewImg = document.getElementById('previewImage');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+            if (previewImg) {
+                previewImg.src = '';
+            }
+            document.body.style.overflow = '';
+        }
+
+        // Modal Video logic
+        function openVideoModal(videoSrc) {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('previewVideo');
+            if (modal && video) {
+                video.src = videoSrc;
+                video.load();
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                video.play().catch(() => {
+                    // Browser autoplay policy handling
+                });
+            }
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('previewVideo');
+            if (video) {
+                video.pause();
+                video.removeAttribute('src');
+                video.load();
+            }
+            if (modal) {
+                modal.style.display = 'none';
+            }
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on backdrop click
+        document.querySelectorAll('.preview-modal').forEach(modalEl => {
+            modalEl.addEventListener('click', function (event) {
+                if (event.target === this) {
+                    if (this.id === 'imageModal') {
+                        closeImageModal();
+                    } else if (this.id === 'videoModal') {
+                        closeVideoModal();
+                    }
+                }
+            });
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
